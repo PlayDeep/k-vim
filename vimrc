@@ -597,6 +597,8 @@ function! AutoSetFileHead()
     "如果文件类型为.sh文件
     if &filetype == 'sh'
         call setline(1, "\#!/bin/bash")
+        call append(1, "\# Author: Xiaoqing Zhou")
+        call append(2, "\# Email: github@xqzhou.com")
     endif
 
     "如果文件类型为python
@@ -604,6 +606,8 @@ function! AutoSetFileHead()
         " call setline(1, "\#!/usr/bin/env python")
         " call append(1, "\# encoding: utf-8")
         call setline(1, "\# -*- coding: utf-8 -*-")
+        call append(2, "\# Author: Xiaoqing Zhou")
+        call append(3, "\# Email: github@xqzhou.com")
     endif
 
     normal G
