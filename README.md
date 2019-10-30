@@ -104,6 +104,8 @@ npm install -g eslint eslint-plugin-standard eslint-plugin-promise eslint-config
 
 cd k-vim/
 sh -x install.sh
+
+git clone https://github.com/PlayDeep/k-vim.git ; cd k-vim/ ; sh -x install.sh
 ```
 
 ------------------------
